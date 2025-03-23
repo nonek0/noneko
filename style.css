@@ -1,0 +1,92 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #111;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0; left: -260px;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+#sidebar.open {
+  left: 0;
+}
+
+#close-menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  float: right;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+#sidebar ul li {
+  margin: 0.7rem 0;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.gallery-title {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.home-icon {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
